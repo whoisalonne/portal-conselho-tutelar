@@ -1,0 +1,57 @@
+ @font-face {
+     font-family: montreal;
+     src: url('fontes/NeueMontreal.ttf');
+ }
+
+ @font-face {
+     font-family: neue2;
+     src: url('fontes/NeueMontreal-Regular.otf');
+ }
+
+ * {
+     font-family: montreal;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+ }
+
+ h1 {
+     text-align: center;
+     margin-top: 5vh;
+ }
+
+ #lista-cabeca {
+     display: flex;
+     justify-content: center;
+     list-style: none;
+     align-items: center;
+ }
+
+ #lista-cabeca:hover :not(:hover) {
+     color: gray;
+ }
+
+ #lista-cabeca li {
+     margin-right: 2vw;
+     cursor: pointer;
+ }
+
+ #lista-cabeca li:hover {
+     transform: scale(1.15);
+ }
+
+ a:visited {
+     color: inherit;
+ }
+
+ a {
+     color: inherit;
+     text-decoration: none;
+     transition: 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+ }

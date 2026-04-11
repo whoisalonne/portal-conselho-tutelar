@@ -8,29 +8,39 @@
      src: url('fontes/NeueMontreal-Regular.otf');
  }
 
- * {
-     font-family: montreal;
- }
-
  html {
      scroll-behavior: smooth;
  }
 
  body {
-     margin: 0;
+     margin: 5vw;
      padding: 0;
+    background:#f5f7fb;
  }
 
  h1 {
      text-align: center;
      margin-top: 5vh;
+     font-size: 3vw;
  }
 
+ h1, .linhaMont, .tituloTabela, th, .tituloLista {
+        font-family: montreal;
+ }
+
+ p {
+    font-family: neue2;
+ }
  #lista-cabeca {
      display: flex;
      justify-content: center;
      list-style: none;
      align-items: center;
+     font-family: neue2;
+     border: 0.25vw solid;
+     padding: 1vw;
+     margin-top:2vw;
+     background-color: #e5ddff;
  }
 
  #lista-cabeca:hover :not(:hover) {
@@ -40,6 +50,7 @@
  #lista-cabeca li {
      margin-right: 2vw;
      cursor: pointer;
+     font-size: 1.5vw;
  }
 
  #lista-cabeca li:hover {
@@ -55,3 +66,222 @@
      text-decoration: none;
      transition: 0.3s cubic-bezier(0.42, 0, 0.58, 1);
  }
+
+ .frase{
+    font-family: neue2;
+    text-align: center;
+    margin-top: 5vw;
+      margin-bottom: 5vw;
+ }
+
+ #sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.35vw solid black;
+    padding: 2vw;
+    margin-top: 10vh;
+    width: 20vw;
+    height: 40vh;
+    border-radius: 1vw;
+    transition: 0.3s linear;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    background-color: #e5ddff;
+}
+
+.tituloCard {
+    font-family: montreal;
+    font-size: 1.5vw;
+    margin-bottom: 1vh;
+    text-align: center;
+    border-bottom: 0.25vw solid #6c3bd1;
+    width: 100%;
+    padding-bottom: 0.5vh;
+}
+
+.txtcard {
+    font-family: neue2;
+    text-align: center;
+    font-size: 1.3vw;
+    margin-top: 1vh;
+}
+
+.secao-tabelas{
+    display:flex;
+    justify-content:center;
+    gap:4vw;
+    padding:5vh 3vw;
+}
+
+/* caixa das tabelas */
+.box-tabela{
+    background:white;
+    padding:25px;
+    width:32vw;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+    border: 0.3vw solid;
+}
+
+/* titulo */
+.box-tabela h2{
+    text-align:center;
+    margin-bottom:2vw;
+    color:#5a2ea6;
+}
+
+/* tabela */
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:0.1vw;
+}
+
+/* cabeçalho */
+th{
+    background:#6c3bd1;
+    color:white;
+    padding:1.2vw;
+    font-size:1.5vw;
+}
+
+/* linhas */
+td{
+    padding:1.2vw;
+    border-bottom:0.1vw solid #eee;
+    font-size: 1.3vw;
+    
+}
+
+.tdLinha{
+    border-left: 0.1vw solid;
+    font-family: neue2;
+}
+
+/* zebra */
+tr:nth-child(even){
+    background:#f3f0ff;
+}
+
+/* hover linha */
+tr:hover{
+    background:#e5ddff;
+    transition:0.2s;
+}
+
+.secao-listas{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:4vw;
+    padding:5vh 2vw;
+}
+
+.card-lista{
+    width:26vw;
+    background:white;
+    padding:2.5vw;
+    border-radius:1.6vw;
+    box-shadow:0 1vw 2vw rgba(0,0,0,0.15);
+    transition:0.3s;
+    border: 0.3vw solid;
+}
+
+.card-lista:hover{
+    transform:translateY(-8px);
+}
+
+.card-lista h2{
+    text-align:center;
+    color:#6c3bd1;
+    margin-bottom:1.5vw;
+}
+
+.card-lista ul{
+    list-style:none;
+}
+
+.card-lista li{
+    padding:10px;
+    border-bottom:0.3vw solid #eee;
+}
+
+.card-lista li:last-child{
+    border:none;
+}
+
+.txtLista {
+    font-family: neue2;
+    font-size: 1.3vw;
+}
+
+.footer{
+    padding-top:3vw;
+    margin-top:5vw;
+    font-family: neue2;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding:2vw;
+    gap:2vw;
+}
+
+.footer-col{
+    width:18vw;
+    min-width:250px;
+}
+
+.footer-col h3{
+    margin-bottom:1vw;
+    font-size:1.4vw;
+    border-bottom:0.15vw solid #6c3bd1;
+    padding-bottom:0.5vw;
+}
+
+.footer-col p{
+    font-size:1vw;
+    margin:0.5vw 0;
+}
+
+.link{
+    color:#c9a6ff;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:0.1vw solid #333;
+    margin-top:2vw;
+    padding:1.5vw;
+}
+
+.copy{
+    font-size:0.9vw;
+    color:#888;
+    font-family: neue2;
+    text-align: center;
+}
+
+footer {
+    margin-top: 15vw;
+}

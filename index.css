@@ -99,6 +99,7 @@
     height: 40vh;
     border-radius: 1vw;
     transition: 0.3s linear;
+    background: white;
 }
 
 .card:hover {

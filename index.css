@@ -72,6 +72,7 @@
     text-align: center;
     margin-top: 5vw;
       margin-bottom: 5vw;
+      font-size: 1.6vw;
  }
 
  #sobre {
@@ -265,7 +266,7 @@ tr:hover{
 }
 
 .link{
-    color:#c9a6ff;
+    color:#6815e6;
 }
 
 .footer-bottom{
